@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultório Odontológico</title>
+
+    <!-- estilização -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Consultório Odontológico</h1>
+        <div>
+            <label for="">Paciente</label>
+            <input type="text" id="inputPaciente">
+        </div>
+        <div>
+            <input type="button" value="Consulta" id="btnConsulta">
+            <input type="button" value="Prioritário" id="btnUrgencia">
+            <input type="button" value="Atender" id="btnAtender">
+        </div>
+        <div>
+            <h3>Em Atendimento: <span id="pacienteEmAtendimento"></span></h3>
+        </div>
+        <div>
+            <pre id="saidaConsulta"></pre>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
