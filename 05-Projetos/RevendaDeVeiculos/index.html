@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenda De Veiculos</title>
+    <!-- estilização -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Revendedora de Veículos</h1>
+        <div class="nomeDoCarro">
+            <label for="" class="labelCarro">Nome do Carro</label>
+            <input type="text" id="inputCarro">
+        </div>
+        <div class="precoDoCarro">
+            <label for="" class="labelPreco">Preço Total</label>
+            <input type="text" id="inputPreco">
+        </div>
+        <input type="button" value="Calcular Parcelas" id="btnCalcularPreco">
+        <div class="resultado">
+            <p id="saidaNomeDoCarro"></p>
+            <p id="saidaValorDaEntrada"></p>
+            <p id="saidaValorDasParcelas"></p>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
