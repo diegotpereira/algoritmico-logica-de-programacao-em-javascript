@@ -10,7 +10,6 @@ let criancas = []
 function adicionarBrinquedo() {
     let nome = inputCrianca.value
     let idade = Number(inputIdade.value)
-
     if (nome == '' || idade == 0 || idade == '' || isNaN(idade)) {
         alert('Por favor, preencha os campos corretamente')
         inputCrianca.value = ''
@@ -19,16 +18,13 @@ function adicionarBrinquedo() {
 
         return
     }
-
     criancas.push({ nome: nome, idade: idade })
-
     inputCrianca.value = ''
     inputIdade.value = ''
     inputCrianca.focus()
-
     listarCriancas()
-
 }
+btnAdicionar.addEventListener('click', adicionarBrinquedo)
 
 function listarCriancas() {
     // Verifica se array está vazio
@@ -37,21 +33,15 @@ function listarCriancas() {
 
         return
     }
-
     let lista = ''
-
     for (let index = 0; index < criancas.length; index++) {
         lista += `${criancas[index].nome} - ${criancas[index].idade} anos \n`
     }
-
     saidaLista.textContent = lista
 }
-
 btnListar.addEventListener('click', listarCriancas)
 
-function filtrarCriancas() {
-
-}
+function filtrarCriancas() {}
 
 function filtrarCriancasPorIdade() {
     if (criancas.length == 0) {
@@ -69,7 +59,6 @@ function filtrarCriancasPorIdade() {
     let resumo = ''
     let menorIdade = copia[0].idade
     let nomes = []
-
     for (let index = 0; index < copia.length; index++) {
         if (copia[index].idade == menorIdade) {
             nomes.push(copia[index].nome)
@@ -83,12 +72,10 @@ function filtrarCriancasPorIdade() {
             nomes.push(copia[index].nome)
         }
     }
-
     resumo += `${menorIdade} ano(s): ${nomes.length} crianças - `
         // O método toFixed() formata um número utilizando notação de ponto fixo.
     resumo += `${(nomes.length / copia.length * 100).toFixed(2)} % \n`
     resumo += `(${nomes.join(', ')}) \n\n`
-
     saidaLista.textContent = resumo
 }
 btnFiltrar.addEventListener('click', filtrarCriancasPorIdade)
