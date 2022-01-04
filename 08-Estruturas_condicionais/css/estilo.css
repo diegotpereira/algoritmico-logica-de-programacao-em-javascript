@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+
+div#geral {
+    background-color: rgb(12, 73, 53);
+    font-size: 15pt;
+    font-weight: bold;
+    color: rgb(147, 17, 173);
+    display: block;
+    padding-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+input {
+    border-bottom: 10px;
+    border-color: deeppink;
+}
